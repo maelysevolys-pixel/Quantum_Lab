@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QUANTUM LAB | Laboratoire quantique</title>
+
+    <!-- Liaison avec le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <div class="logo">QUANTUM LAB<span>.</span></div>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#experiences">Expériences</a>
+            <a href="#apropos">À propos</a>
+        </nav>
+    </header>
+
+
+    <!-- PAGE D'ACCUEIL -->
+    <main>
+
+        <section id="accueil" class="hero">
+
+            <p class="sous-titre">INTERACTIVE SCIENCE EXPERIENCE · 2026</p>
+
+            <h1>
+                Bienvenue dans<br>
+                le monde <span>quantique.</span>
+            </h1>
+
+            <p class="description">
+                Explorez les mystères de la physique quantique
+                à travers trois expériences interactives.
+            </p>
+
+            <a href="#experiences" class="bouton">
+                Commencer l'exploration →
+            </a>
+
+        </section>
+
+
+        <!-- SECTION DES EXPERIENCES -->
+        <section id="experiences">
+
+            <div class="section-titre">
+                <p class="sous-titre">EXPLOREZ L'INCONNU</p>
+                <h2>Nos expériences</h2>
+            </div>
+
+            <div class="experiences-container">
+
+                <!-- EXPERIENCE 1 -->
+                <article class="carte">
+                    <div class="numero">01</div>
+
+                    <h3>Les deux fentes</h3>
+
+                    <p>
+                        Découvrez le comportement fascinant
+                        des particules et des ondes.
+                    </p>
+
+                    <button onclick="ouvrirExperience('fentes')">
+                        Explorer →
+                    </button>
+                </article>
+
+
+                <!-- EXPERIENCE 2 -->
+                <article class="carte">
+                    <div class="numero">02</div>
+
+                    <h3>La superposition</h3>
+
+                    <p>
+                        Découvrez comment un qubit peut
+                        être dans une superposition d'états.
+                    </p>
+
+                    <button onclick="ouvrirExperience('qubit')">
+                        Explorer →
+                    </button>
+                </article>
+
+
+                <!-- EXPERIENCE 3 -->
+                <article class="carte">
+                    <div class="numero">03</div>
+
+                    <h3>L'intrication</h3>
+
+                    <p>
+                        Explorez les corrélations surprenantes
+                        entre deux systèmes quantiques.
+                    </p>
+
+                    <button onclick="ouvrirExperience('intrication')">
+                        Explorer →
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+		
+		<!-- ZONE DES EXPERIENCES INTERACTIVES -->
+		<section id="zone-experience" class="zone-experience" hidden>
+
+			<button onclick="fermerExperience()" class="bouton-retour">
+				← Retour aux expériences
+			</button>
+
+			<div id="contenu-experience"></div>
+
+		</section>
+
+        <!-- SECTION A PROPOS -->
+        <section id="apropos">
+
+            <p class="sous-titre">BEYOND THE CLASSICAL WORLD</p>
+
+            <h2>La science est une exploration.</h2>
+
+            <p class="description">
+                Chaque expérience est une occasion de découvrir,
+                de questionner et de comprendre notre univers.
+            </p>
+
+        </section>
+
+
+        <!-- MESSAGE FINAL -->
+        <section id="message">
+
+            <h2>Une dernière découverte...</h2>
+
+            <button onclick="afficherMessage()">
+                Déverrouiller le message
+            </button>
+
+            <p id="message-final"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>QUANTUM LAB · ÉDITION SPÉCIALE 2026</p>
+        <p>Made with curiosity.</p>
+    </footer>
+
+
+    <!-- Liaison avec le fichier JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
